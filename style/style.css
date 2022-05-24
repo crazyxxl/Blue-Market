@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   background: #f1f1f1;
+   font-family: sans-serif;
+}
+.container{
+    max-width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sidebar{
+    height: 100%;
+    width: 100px;
+    background: white;
+    top: 0;
+    left: 0;
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px rgb(96, 94, 94);
+    position: fixed;
+    transition: 0.5s width;
+    overflow: hidden;
+}
+.sidebar:hover{
+    width: 234px;
+}
+.logo{
+    font-size: 60px;
+    color: #2A86B1;
+}
+.logo_icon::after{
+    color: #3FA5D5;
+    opacity: 1;
+}
+.user{
+    width: 70px;
+    height: 70px;
+}
+.user_image{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.sidebar_nav{
+    list-style: none;
+    padding-left: 15px;
+}
+.sidebar_link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #939393;
+    margin-bottom: 55px;
+    transition: 0.5s color;
+}
+.sidebar_link:hover{
+    color: #2A86B1;
+}
+.sidebar_icon{
+    font-size: 31px;
+    width: 40px;
+    text-align: center;
+    margin-right: 30px;
+    flex-shrink: 0;
+}
+.main{
+    padding-top: 30px;
+    padding-bottom: 45px;
+}
+.intro{
+    background: white url(../image/intro.png)center/cover;
+    padding: 110px 60px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+.intro_title{
+    font-size: 50px;
+    line-height: 59px;
+    color: #464748;
+    max-width: 330px;
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 1;
+}
+.intro_title::before{
+    background: #3FA5D5;
+    content: "";
+    display: block;
+    height: 52px;
+    width: 100px;
+    position: absolute;
+    top: 33px;
+    z-index: -1;
+}
+.intro_text{
+    font-size: 16px;
+    line-height: 19px;
+    text-align: justify;
+    color: #696868;
+    max-width: 315px;
+    margin-bottom: 25px;
+}
+.intro_button{
+    width: 211px;
+    height: 33px;
+    background: #3FA5D5;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+.card{
+    padding: 24px 18px 19px;
+    background: white;
+    width: 255px;
+    border-radius: 15px;
+}
+.card_title{
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2A86B1;
+    margin-bottom: 40px;
+}
+.card_icon{
+    font-size: 100px;
+    color: #3FA5D5;
+    display: block;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.card_button{
+    width: 100%;
+    height: 33px;
+    background: #3FA5D5;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.servise{
+    display: flex;
+    justify-content: space-between;
+}
+.info{
+display: flex;
+justify-content: space-between;
+margin-top: 50px;
+}
+.section_title{
+    color: #686868;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+.comments{
+    width: 811px;
+}
+.section_text{
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    text-align: justify;
+    line-height: 19px;
+    color: #545454;
+    padding: 15px;
+}
+.news{
+    width: 255px;
+}
+.news_item{
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.news_title{
+    color: #323232;
+    font-weight: normal;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+.news_text{
+    font-size: 14px;
+    color: black;
+    font-weight: 300;
+    line-height: 13px;
+}
+.news_img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.footer{
+    background: #3FA5D5;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.footer_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer_title{
+    font-size: 50px;
+    color: white;
+}
+.footer_tel{
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 15px;
+}
+.footer_email{
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
